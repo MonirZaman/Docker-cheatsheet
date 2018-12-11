@@ -7,6 +7,9 @@
 ## Docker registry setup
 `cat <file-storing-password> | docker login --username <username> --password-stdin <server-name-without-https-and-port>`
 
+## Remove dangling image
+`docker rmi $(docker images -q -f dangling=true)`
+
 ## Volume mount in Windows
 * Unshare the volume from its properties
 * Prepare a Docker user
