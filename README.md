@@ -17,6 +17,11 @@
 * Example command to create container
 `docker run --rm -dit --name "<name_of_container>" -v d:/:/ds -p 5000:5000 <image_name>`
 
+## Authenticate Docker client to an Azure container registry
+`docker login myregistry.azurecr.io`  
+Enter additional authentication information such as username through interactive prompt.
+
+
 ## Additional resource:
 * Windows and Docker: http://peterjohnlightfoot.com/tag/docker/
 * Docker 101: https://towardsdatascience.com/how-docker-can-help-you-become-a-more-effective-data-scientist-7fc048ef91d5
