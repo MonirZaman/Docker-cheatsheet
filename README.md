@@ -18,9 +18,10 @@
 `docker run --rm -dit --name "<name_of_container>" -v d:/:/ds -p 5000:5000 <image_name>`
 
 ## Authenticate Docker client to an Azure container registry
-`docker login myregistry.azurecr.io`  
+`docker login myregistry.azurecr.io`
+or  
+`cat ~/file.txt| docker login myregistry.azurecr.io --username <username> --password-stdin`
 Enter additional authentication information such as username through interactive prompt.
-
 
 ## Additional resource:
 * Windows and Docker: http://peterjohnlightfoot.com/tag/docker/
