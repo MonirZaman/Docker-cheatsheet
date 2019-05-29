@@ -20,7 +20,7 @@
 ## Authenticate Docker client to an Azure container registry
 `docker login myregistry.azurecr.io`
 or  
-`cat ~/file.txt| docker login myregistry.azurecr.io --username <username> --password-stdin`
+`cat ~/file.txt| docker login myregistry.azurecr.io --username <username> --password-stdin`  
 Enter additional authentication information such as username through interactive prompt.
 
 ## Additional resource:
