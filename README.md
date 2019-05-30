@@ -21,7 +21,7 @@
 `docker build -t <image-name>` --build-arg SSH_KEY="$(cat ~/.ssh/id_rsa)" --build-arg SSH_KEY_PUB="$(cat ~/.ssh/id_rsa.pub)"  
 
 Sample Dockerfile utilizing the run-time argument:  
-`
+```
 FROM <base-image> as intermediate
 
 RUN apt-get update && \
@@ -30,7 +30,6 @@ RUN apt-get update && \
     openssh-server \
     libmysqlclient-dev
 
-# add credentials on build
 ARG SSH_KEY
 ARG SSH_KEY_PUB
 
@@ -50,7 +49,7 @@ RUN mkdir -p /root/.ssh && \
     cd /REPO_to_create && \
     git checkout V1 && \
     rm -rf /REPO_to_create/.git
-`  
+```  
 
 
 ## Authenticate Docker client to an Azure container registry
