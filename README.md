@@ -17,6 +17,9 @@
 * Example command to create container
 `docker run --rm -dit --name "<name_of_container>" -v d:/:/ds -p 5000:5000 <image_name>`
 
+## Environment variable
+Use `-e` option e.g., `-e "OUTPUT_DIR=/out"`
+
 ## Run-time argument in docker build
 `docker build -t <image-name>` --build-arg SSH_KEY="$(cat ~/.ssh/id_rsa)" --build-arg SSH_KEY_PUB="$(cat ~/.ssh/id_rsa.pub)"  
 
